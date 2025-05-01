@@ -2,7 +2,7 @@ from django.db import models
 
 class Bus(models.Model):
     info = models.CharField(max_length=255, null=True)
-    num_seats = models.IntegerField()
+    num_seats = models.PositiveIntegerField()
 
     class Meta:
         verbose_name_plural = "buses"
